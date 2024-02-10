@@ -5,6 +5,7 @@
 }
 .container{
 	border: 10px solid rgb(236, 232, 230);
+	
 	min-height: 100vh;
 	display: flex;
 	justify-content: space-evenly;
@@ -61,4 +62,18 @@
 }
 .col-2{
 	grid-column: span 2;
+}
+@media screen and (max-width: 1024px) {
+	.container{
+		flex-direction: column;
+	}
+	.galery{
+		width: 100%;
+		padding-inline: 12px;
+		
+	}
+	.box{
+		grid-row: span 1;
+		grid-column: span 3;
+	}
 }
